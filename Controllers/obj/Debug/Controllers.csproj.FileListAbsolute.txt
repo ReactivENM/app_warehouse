@@ -1,0 +1,12 @@
+C:\Dev\quickcarry\app\app_warehouse\Controllers\bin\Debug\Controllers.dll
+C:\Dev\quickcarry\app\app_warehouse\Controllers\bin\Debug\Controllers.pdb
+C:\Dev\quickcarry\app\app_warehouse\Controllers\bin\Debug\Models.dll
+C:\Dev\quickcarry\app\app_warehouse\Controllers\bin\Debug\RestSharp.dll
+C:\Dev\quickcarry\app\app_warehouse\Controllers\bin\Debug\Models.pdb
+C:\Dev\quickcarry\app\app_warehouse\Controllers\obj\Debug\Controllers.csprojResolveAssemblyReference.cache
+C:\Dev\quickcarry\app\app_warehouse\Controllers\obj\Debug\Controllers.dll
+C:\Dev\quickcarry\app\app_warehouse\Controllers\obj\Debug\Controllers.pdb
+C:\Dev\quickcarry\app\app_warehouse\Controllers\bin\Debug\Newtonsoft.Json.dll
+C:\Dev\quickcarry\app\app_warehouse\Controllers\bin\Debug\Newtonsoft.Json.xml
+C:\Dev\quickcarry\app\app_warehouse\Controllers\bin\Debug\System.ValueTuple.dll
+C:\Dev\quickcarry\app\app_warehouse\Controllers\bin\Debug\System.ValueTuple.xml
