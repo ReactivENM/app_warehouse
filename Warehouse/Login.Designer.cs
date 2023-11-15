@@ -150,12 +150,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(600, 424);
             this.Controls.Add(this.panel1);
             this.MaximumSize = new System.Drawing.Size(616, 463);
             this.MinimumSize = new System.Drawing.Size(616, 463);
             this.Name = "Login";
-            this.Text = "Login";
+            this.Text = "Iniciar sesión - Administar almacenes";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
