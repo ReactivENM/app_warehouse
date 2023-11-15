@@ -213,7 +213,7 @@ namespace Warehouse.Forms
 
         private void btnAddPackage_Click(object sender, EventArgs e)
         {
-            new Package.PackageLot(selectedLot.id, user.id).ShowDialog();
+            new Package.PackageLot(selectedLot, user.id).ShowDialog();
         }
 
         private void UpdateButtonImage(Button btn, string enabled, string disabled)

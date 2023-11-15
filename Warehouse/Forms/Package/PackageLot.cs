@@ -14,11 +14,13 @@ namespace Warehouse.Forms.Package
         List<PackageModel> allPackagesData = new List<PackageModel>();
         private float lotWeight = 0;
         private int lote;
+        private string loteStatus;
         private int userId;
 
-        public PackageLot(int lote, int userId)
+        public PackageLot(LotModel lote, int userId)
         {
-            this.lote = lote;
+            this.lote = lote.id;
+            this.loteStatus = lote.estado;
             this.userId = userId;
             initializeFormAsync();
         }
@@ -26,6 +28,7 @@ namespace Warehouse.Forms.Package
         public async void initializeFormAsync()
         {
             InitializeComponent();
+
             packagesInLot.SelectedIndexChanged += packagesInLot_SelectedItem;
             packagesWithoutLot.SelectedIndexChanged += packagesWithoutLot_SelectedItem;
 
@@ -111,6 +114,7 @@ namespace Warehouse.Forms.Package
                 listBox.Items.Add($"{package.id_externo} - {package.peso}kg");
             }
             listBox.SelectedItem = null;
+            if (loteStatus != "en_espera") listBox.SelectionMode = SelectionMode.None;
         }
 
         private void packagesInLot_SelectedItem(object sender, EventArgs e)
