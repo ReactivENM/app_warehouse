@@ -73,8 +73,6 @@ namespace Warehouse.Forms
                 TruckModel wh = truckData.Find(d => d.id == Convert.ToInt32(id));
                 selectedTruck = wh;
                 btnLot.Enabled = true;
-                btnEditTruck.Enabled = true;
-                btnDeleteTruck.Enabled = true;
             }
         }
 
@@ -90,8 +88,6 @@ namespace Warehouse.Forms
             // Disable buttons and unselect actual warehouse
             selectedTruck = null;
             btnLot.Enabled = false;
-            btnEditTruck.Enabled = false;
-            btnDeleteTruck.Enabled = false;
         }
 
         private void btnNext_Click(object sender, EventArgs e)
@@ -106,8 +102,6 @@ namespace Warehouse.Forms
             // Disable buttons and unselect actual warehouse
             selectedTruck = null;
             btnLot.Enabled = false;
-            btnEditTruck.Enabled = false;
-            btnDeleteTruck.Enabled = false;
         }
 
         private void btnLot_Click(object sender, EventArgs e)

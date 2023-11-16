@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTruck));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.matricula = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,9 +43,6 @@
             this.btnNext = new System.Windows.Forms.Button();
             this.lblPage = new System.Windows.Forms.Label();
             this.btnPrev = new System.Windows.Forms.Button();
-            this.btnDeleteTruck = new System.Windows.Forms.Button();
-            this.btnEditTruck = new System.Windows.Forms.Button();
-            this.btnCreateTruck = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -56,8 +52,8 @@
             // 
             this.dataGridView.AllowUserToAddRows = false;
             this.dataGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -74,8 +70,8 @@
             this.dataGridView.MultiSelect = false;
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersVisible = false;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            this.dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            this.dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView.Size = new System.Drawing.Size(947, 520);
             this.dataGridView.StateCommon.Background.Color1 = System.Drawing.Color.Transparent;
@@ -108,8 +104,8 @@
             // id
             // 
             this.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.id.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id.DefaultCellStyle = dataGridViewCellStyle2;
             this.id.HeaderText = "ID";
             this.id.Name = "id";
             this.id.ReadOnly = true;
@@ -157,9 +153,6 @@
             // 
             this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel2.Controls.Add(this.btnLot);
-            this.panel2.Controls.Add(this.btnDeleteTruck);
-            this.panel2.Controls.Add(this.btnEditTruck);
-            this.panel2.Controls.Add(this.btnCreateTruck);
             this.panel2.Controls.Add(this.btnNext);
             this.panel2.Controls.Add(this.lblPage);
             this.panel2.Controls.Add(this.btnPrev);
@@ -218,47 +211,6 @@
             this.btnPrev.Text = "Anterior";
             this.btnPrev.UseVisualStyleBackColor = true;
             // 
-            // btnDeleteTruck
-            // 
-            this.btnDeleteTruck.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnDeleteTruck.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDeleteTruck.BackgroundImage")));
-            this.btnDeleteTruck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnDeleteTruck.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDeleteTruck.Enabled = false;
-            this.btnDeleteTruck.ImageKey = "(none)";
-            this.btnDeleteTruck.Location = new System.Drawing.Point(94, 13);
-            this.btnDeleteTruck.Name = "btnDeleteTruck";
-            this.btnDeleteTruck.Size = new System.Drawing.Size(35, 35);
-            this.btnDeleteTruck.TabIndex = 5;
-            this.btnDeleteTruck.Text = "\r\n";
-            this.btnDeleteTruck.UseVisualStyleBackColor = true;
-            // 
-            // btnEditTruck
-            // 
-            this.btnEditTruck.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnEditTruck.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditTruck.BackgroundImage")));
-            this.btnEditTruck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEditTruck.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditTruck.Enabled = false;
-            this.btnEditTruck.Location = new System.Drawing.Point(53, 13);
-            this.btnEditTruck.Name = "btnEditTruck";
-            this.btnEditTruck.Size = new System.Drawing.Size(35, 35);
-            this.btnEditTruck.TabIndex = 4;
-            this.btnEditTruck.UseVisualStyleBackColor = true;
-            // 
-            // btnCreateTruck
-            // 
-            this.btnCreateTruck.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnCreateTruck.BackColor = System.Drawing.SystemColors.Window;
-            this.btnCreateTruck.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCreateTruck.BackgroundImage")));
-            this.btnCreateTruck.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCreateTruck.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCreateTruck.Location = new System.Drawing.Point(12, 13);
-            this.btnCreateTruck.Name = "btnCreateTruck";
-            this.btnCreateTruck.Size = new System.Drawing.Size(35, 35);
-            this.btnCreateTruck.TabIndex = 3;
-            this.btnCreateTruck.UseVisualStyleBackColor = false;
-            // 
             // FormTruck
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -288,9 +240,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnLot;
-        private System.Windows.Forms.Button btnDeleteTruck;
-        private System.Windows.Forms.Button btnEditTruck;
-        private System.Windows.Forms.Button btnCreateTruck;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Label lblPage;
         private System.Windows.Forms.Button btnPrev;
